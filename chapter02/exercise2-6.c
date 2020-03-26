@@ -32,7 +32,7 @@ int setbits(int x, int p, int n, int y)
   /* move rightmost n bits of y to p */
   t2 = t2 << shift;
 
-  return t1 + t2;
+  return t1 | t2;
 }
 
 void check(int x, int p, int n, int y, int expected, int actual)

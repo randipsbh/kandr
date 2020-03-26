@@ -27,7 +27,7 @@ int invert(int x, int p, int n)
   int t1 = ~x & xmask;
   int t2 = x & ~xmask;
 
-  return t1 + t2;
+  return t1 | t2;
 }
 
 check(int x, int p, int n, int expected, int actual)
